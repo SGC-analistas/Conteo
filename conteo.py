@@ -47,7 +47,7 @@ class Conteo(Query):
                 (df["type"] == "unset")]
         not_loc = df[df["type"]=='not locatable']
         outside = df[df["type"]=='outside of network interest']
-        volcanic = df[df["type"]=='volcanic_eruption']
+        volcanic = df[df["type"]=='volcanic eruption']
 
         mag = np.arange(*self.mag_range)
         eq_m = eq.groupby(pd.cut(eq["magnitude"],mag))
