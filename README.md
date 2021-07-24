@@ -9,6 +9,12 @@ Rutina realizada para contar eventos según su magnitud y su tipo. (Se puede hac
 ### - Requerimientos previos
 Se corre en sistemas linux.
 
+*Es necesario que en el archivo conteo.py se cambie esta línea*
+```bash
+php_query_path = "/home/ecastillo/repositories/php_queries"
+```
+y se reemplace por la ubicación del repositorio https://github.com/SGC-analistas/php_queries
+
 ### - Python
 #### Instalación con pip 
 Python Versión 3.7 en adelante. (Usaremos como ejemplo python 3.8)
