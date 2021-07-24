@@ -7,7 +7,7 @@
 #  */
 
 import sys
-php_query_path = "/home/ecastillo/repositories/php_queries"
+php_query_path = "/opt/rutinas/php_queries"
 sys.path.insert(0,php_query_path)
 
 from query import Query
@@ -183,8 +183,9 @@ def read_args():
 
 
 if __name__ == "__main__":
+    print("Ejemplos")
     print("SIMPLE: python conteo.py +s 20210101T000000 +e 20210801T000000 +m 0 10 1 +d 0 200 +u ecastillo")
-    print("RADIAL: python conteo.py +s 20210101T000000 +e 20210801T000000 +m 0 10 1 +d 0 200 +r 6.81 -73.17 120 +u ecastillo")
+    print("RADIAL: python conteo.py +s 20210101T000000 +e 20210801T000000 +m 0 10 1 +d 0 200 +r 6.81 -73.17 120 +u ecastillo\n\n")
     
     args = read_args()
 
